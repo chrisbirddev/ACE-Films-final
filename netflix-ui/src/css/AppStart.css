@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.appContainer {
+  position: relative;
+}
+
+.firstScreen {
+  position: relative;
+  height: 100vh;
+  padding: 20px;
+  color: white;
+  
+}
+
+.logo img {
+  width: 300px;
+}
+
+.signInButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.posters {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(8deg) scale(0.35);
+  z-index: -1; 
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), black 85%); 
+    transform: rotate(-3deg) scale(2);
+  }
+}
+
+.content {
+  position: flex;
+}
+
+.signUpButton {
+  position: absolute;
+  bottom: 70px;
+  left: 500px;
+}
+
+button {
+  background-image: linear-gradient(to right, #DC2424 0%, #4A569D 51%, #e50991 100%);
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #b61779;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-position: right center;
+  color: white;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.copyright {
+  text-align: right;
+  padding-left: 25px;
+}
+
+.columns {
+  display:flex;
+}
+
+.column {
+  width: 150px;
+  text-align: left;
+  padding: 0 10px;
+  margin-top: 20px; 
+  margin-right: 20px;
+}
+
+.column a {
+  color: white;
+  text-decoration: none;
+  display: block; 
+  margin-bottom: 10px;
+}

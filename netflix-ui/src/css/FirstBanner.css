@@ -1,0 +1,23 @@
+.banner {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+  }
+  
+  .banLogo img {
+    width: 100px; 
+  }
+  
+  .signInSignUp {
+    display: flex;
+  }
+  
+  .signInBanner,
+  .signUpBanner {
+    margin-left: 10px;
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  
